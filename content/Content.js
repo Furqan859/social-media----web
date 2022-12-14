@@ -82,12 +82,6 @@ window.onhashchange = function () {
 }
 
 
-window.addEventListener('scroll',()=>{
-  console.log("scrolled", window.scrollY) //scrolled from top
-  console.log(window.innerHeight) //visible part of screen
-  if(window.scrollY + window.innerHeight >= document.documentElement.scrollHeight){
-      console.log("end")
-  }
-})
+
 
 

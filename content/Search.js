@@ -8,13 +8,11 @@ async function dbSearch(){
   // search data
   search.addEventListener("input",(e)=>{
     console.log(e.target.value);
-    const filteredUsers = newSearchData.posts.filter((u)=>u.title.toLowerCase().includes(e.target.value.toLowerCase()));
+    const filteredUsers = newSearchData.posts.filter
+    ((u)=>u.title.toLowerCase().includes(e.target.value.toLowerCase()));
     // const filteredUsers = newSearchData.posts.filter((u)=>u.title.toLowerCase().includes(e.target.value.toLowerCase()));
       const myContent = document.getElementById("card");
 
-     
-
- 
       
       const showHtml = filteredUsers.map((filterData, index) => {
         return `<div>
