@@ -11,15 +11,10 @@ async function handleFormSubmit(event) {
       body: JSON.stringify({
         username: username.value,
         password: password.value,
-
-
       })
     })
-
     const data = await getData.json();
     localStorage.setItem('data', JSON.stringify(data));
-
-
     if (!data.token) {
       alert("Invalid Email or Password");
 
@@ -31,13 +26,7 @@ async function handleFormSubmit(event) {
   catch (e) {
     console.log(e.message);
   }
-
-
 }
-
-
-
-
 let form = document.querySelector('.form');
 form.addEventListener('submit', handleFormSubmit);
 

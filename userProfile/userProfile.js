@@ -1,7 +1,6 @@
 const data = JSON.parse(localStorage.getItem('data'))
 console.log(data, "userProfile");
 
-// user nav data
 const image = document.getElementById("nav-img")
 image.src = data.image;
 const image1 = document.getElementById("nav-img-1")
@@ -33,10 +32,10 @@ function LogOut() {
 
 window.location.hash = "no-back-button";
 
-    // Again because Google Chrome doesn't insert
-    // the first hash into the history
-    window.location.hash = "Again-No-back-button"; 
+// Again because Google Chrome doesn't insert
+// the first hash into the history
+window.location.hash = "Again-No-back-button";
 
-    window.onhashchange = function(){
-        window.location.hash = "no-back-button";
-    }
+window.onhashchange = function () {
+    window.location.hash = "no-back-button";
+}
