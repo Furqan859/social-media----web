@@ -22,7 +22,7 @@ async function userComments(index) {
   // console.log(Comments.comments[0]);
   const myComments = document.getElementById("userComments");
   const showComments = await Comments.comments.map((comment, index) => {
-    return `<div class="card" style="width: 18rem;">
+    return `<div class="card" style="width: 25rem;">
     <div class="card-body">
       <h5 class="card-title">Comments</h5>
       <div class="input-group m-2">
