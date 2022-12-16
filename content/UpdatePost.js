@@ -83,7 +83,6 @@ myContent.innerHTML = showHtml;
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         body: NewData,
-        postId:Math.floor(Math.random() * 100),
         userId:Math.floor(Math.random()* 100)
       })
     })
